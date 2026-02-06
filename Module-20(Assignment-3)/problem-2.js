@@ -1,0 +1,15 @@
+function validOtp(otp) {
+    if(typeof otp !== 'string'){
+        return 'Invalid';
+    }
+    
+    if(otp.length === 8 && otp.startsWith('ph-')){
+        return true;
+    }
+
+    return false;
+
+}
+
+console.log(validOtp("abc-10985"));
+
