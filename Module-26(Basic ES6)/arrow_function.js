@@ -33,9 +33,11 @@ const doMath = (x,y) => {
 console.log(doMath(5,7));
 
 // In DOM
-document.getElementById('btn').addEventListener('click',
-    (event) => {
+// document.getElementById('btn').addEventListener('click',
+//     (event) => {
 
-    }
-)
+//     }
+// )
 
+const sq = x => x*x;
+console.log(sq(5));
