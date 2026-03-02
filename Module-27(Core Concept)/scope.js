@@ -30,7 +30,7 @@ const multiply = (a, b) =>{
 
 multiply(2,5);
 
-// create a scope
+// create a block-scope
 if(true){
 
 }
@@ -38,4 +38,13 @@ if(true){
 while(true){
 
 }
+
+
+// Hoisted and no-error
+console.log(a);
+var a = 5;
+
+// hoisted but error. Because block scope not accessible before initialization.
+console.log(b);
+let b = 5;
 
